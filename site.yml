@@ -1,7 +1,10 @@
 ---
 - hosts: homelab
   tasks:
-    - name: This command will change the working directory to somedir/
+    - name: CHOWN MEDIA FILES
+      become: true
       ansible.builtin.shell:
-        cmd: chown -R mpowe:mpowe /data/Media
+        cmd: sudo chown -R mpowe:mpowe /data/Media
         chdir: /data
+      args:
+        executable: /bin/bash
