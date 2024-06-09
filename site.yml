@@ -4,5 +4,5 @@
   tasks:
     - name: This command will change the working directory to somedir/
       ansible.builtin.shell:
-        cmd: sudo chown -R mpowe:mpowe /data/Media
+        cmd: chown -R mpowe:mpowe /data/Media
         chdir: /data
