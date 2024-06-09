@@ -1,8 +1,9 @@
 ---
 - hosts: homelab
+  become: true
+  become_method: sudo
   tasks:
     - name: CHOWN MEDIA FILES
-      become: true
       ansible.builtin.shell:
         cmd: sudo chown -R mpowe:mpowe /data/Media
         chdir: /data
