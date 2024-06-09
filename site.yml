@@ -3,5 +3,5 @@
   tasks:
     - name: This command will change the working directory to somedir/
       ansible.builtin.shell:
-        cmd: touch ansible.txt && echo "hello" > ansible.txt
-        chdir: /tmp
+        cmd: chown -R mpowe:mpowe /data/Media
+        chdir: /data
