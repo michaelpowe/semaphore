@@ -4,4 +4,4 @@
     - name: This command will change the working directory to somedir/
       ansible.builtin.shell:
         cmd: touch ansible.txt
-        chdir: tmp/
+        chdir: /tmp
