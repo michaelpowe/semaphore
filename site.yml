@@ -1,6 +1,5 @@
 ---
 - hosts: homelab
-  become: true
   tasks:
     - name: CHOWN MEDIA FILES
       ansible.builtin.shell:
