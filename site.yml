@@ -4,7 +4,7 @@
   tasks:
     - name: CHOWN MEDIA FILES
       ansible.builtin.shell:
-        cmd: sudo chown -R mpowe:mpowe /data/Media
+        cmd: chown -R mpowe:mpowe /data/Media
         chdir: /data
       args:
         executable: /bin/bash
